@@ -7,8 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-   
+      content: {
+        vercel: 'url("../assets/mid-sentence.svg")',
+      },
+      fontFamily: {
+        Gaya: ["Gaya"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
