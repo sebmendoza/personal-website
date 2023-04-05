@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         Gaya: ["Gaya"],
+        Display: ["Casanova", "Oswald", "Open Sans"],
       },
       backgroundImage: {
         parchment: "url('./assets/parchment.avif')",
