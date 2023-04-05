@@ -24,6 +24,7 @@ function Landing() {
       <div className="flex w-full justify-evenly">
         {landingPageAdjectives.map((item, i) => (
           <motion.span
+            initial={"hide"}
             animate={showAdj ? "show" : "hide"}
             key={i}
             variants={variants}
