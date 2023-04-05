@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         Gaya: ["Gaya"],
       },
+      backgroundImage: {
+        parchment: "url('./assets/parchment.avif')",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
