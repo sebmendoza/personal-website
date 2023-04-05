@@ -35,7 +35,7 @@ function Sidenav() {
   };
 
   return (
-    <div className="fixed z-50 flex min-h-screen w-20 flex-col items-center justify-around font-Gaya">
+    <div className="fixed z-50 flex min-h-screen w-20 flex-col items-center justify-around font-Display">
       {/* <div className="absolute top-0 bottom-0  left-0 right-0 flex w-[100vh] -rotate-90 flex-row-reverse justify-around bg-white"> */}
 
       <div className="relative my-3 flex h-1/3 w-[40px] items-center justify-center whitespace-nowrap">

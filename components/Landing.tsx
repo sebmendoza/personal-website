@@ -1,31 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+
 const landingPageAdjectives = [
-  "I explore",
-  "I build communities",
-  "and I code as an expression of my creativity",
+  "amateur explorer",
+  "communtiy builder",
+  "spikeball enthusiast",
 ];
+const variants = {
+  show: { opacity: 1, x: 0 },
+  hide: { opacity: 0, x: "-100%" },
+};
 
 function Landing() {
+  const [showAdj, setShowAdj] = useState(false);
   return (
-    <div className="relative h-screen w-full">
-      {/* Call out of who/ what I am */}
-      <section className="absolute top-[30%]">
-        <h1 className="mb-3 text-5xl">Hi I&apos;m Sebastian</h1>
-        <div className="ml-5 flex flex-col gap-5 text-3xl">
-          {landingPageAdjectives.map((adj) => {
-            return (
-              <div key={adj} className="mt-1 flex items-center gap-x-4">
-                <div className="h-[10px] w-[10px] bg-black"></div>
-                <h3>{adj}</h3>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-      <div className="absolute bottom-[15%] right-0">
-        <h3 className="text-2xl">
-          learning @uwaterloo by day <br /> playing spikeball and poker by night
-        </h3>
+    <div className="relative flex h-screen w-full flex-col items-center justify-center font-Display">
+      <h1
+        className="relative mb-3 text-[150px]"
+        onMouseEnter={() => setShowAdj(true)}
+      >
+        Hi! I&apos;m Sebastian
+      </h1>
+      <div className="flex w-full justify-evenly">
+        {landingPageAdjectives.map((item, i) => (
+          <motion.span
+            animate={showAdj ? "show" : "hide"}
+            key={i}
+            variants={variants}
+            className="text-[25px]"
+          >
+            {item}
+          </motion.span>
+        ))}
       </div>
     </div>
   );
