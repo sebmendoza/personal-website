@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { FaTwitter, FaLinkedin, FaGithub, FaSpotify } from "react-icons/fa";
 
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const contacts = [
   {

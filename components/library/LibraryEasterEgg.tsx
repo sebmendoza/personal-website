@@ -20,7 +20,7 @@ const fancyWord = [
   "zenith",
 ];
 
-function WordEasterEgg() {
+function LibraryEasterEgg() {
   const [mousePosition, setMousePosition] = useState<MousePosition>({
     mouseX: 0,
     mouseY: 0,
@@ -78,4 +78,4 @@ function WordEasterEgg() {
   );
 }
 
-export default WordEasterEgg;
+export default LibraryEasterEgg;
