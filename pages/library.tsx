@@ -10,7 +10,19 @@ type MousePosition = {
   mouseY: number;
 };
 
-const fancyWord = ["list", "of", "fancy", "words", "blah", "blah"];
+const fancyWord = [
+  "coterie",
+  "copious",
+  "didactic",
+  "ephemeral",
+  "eschew",
+  "fastidious",
+  "fecundity",
+  "flotsam",
+  "jetsam",
+  "parsimonious",
+  "zenith",
+];
 
 function Library() {
   const [mousePosition, setMousePosition] = useState<MousePosition>({
@@ -53,7 +65,7 @@ function Library() {
       {/* Words I've learned */}
       <div className="relative my-10">
         <div
-          className="relative hidden h-64 cursor-crosshair overflow-hidden border-2 transition duration-300 ease-in hover:opacity-100  lg:block"
+          className="relative hidden h-64 cursor-crosshair overflow-hidden rounded-lg border-2 opacity-0 transition duration-300 ease-in hover:opacity-100 lg:block"
           onMouseMove={(e) => handleMouseMove(e)}
         >
           <motion.div
@@ -62,23 +74,12 @@ function Library() {
               x: mousePosition.mouseX,
               y: mousePosition.mouseY,
             }}
-            // transition={{
-            //   duration: 0.2,
-            //   ease: "easeInOut",
-            // }}
           >
-            {/* {fancyWord.map((w, i) => (
-              <span
-                key={i}
-                data-status="inactive"
-                className="absolute left-0 top-0 font-sidenav text-4xl data-[status=active]:block data-[status=inactive]:hidden"
-              >
-                {w}
-              </span>
-            ))} */}
-
             {fancyWord[wordIndex % fancyWord.length]}
           </motion.div>
+          <p className="absolute bottom-1 left-2 font-body text-sm">
+            a collection of cool words I&apos;ve jotted down
+          </p>
         </div>
       </div>
       <BackButton />
