@@ -1,8 +1,31 @@
 import React, { useState, useRef } from "react";
 import Link from "next/link";
+import { FaTwitter, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { motion, useInView } from "framer-motion";
-// import Bookmark from "../assets/Bookmark.svg";
+
+const contacts = [
+  {
+    icon: <FaTwitter />,
+    username: "@sebmen7",
+    link: "https://twitter.com/sebmen7",
+  },
+  {
+    icon: <FaEnvelope />,
+    username: "sebastian.mendoza@uwaterloo.ca",
+    link: "sebastian.mendoza@uwaterloo.ca",
+  },
+  {
+    icon: <FaLinkedin />,
+    username: "sebmendoza",
+    link: "https://www.linkedin.com/in/sebastian-mendoza-331910206/7",
+  },
+  {
+    icon: <FaGithub />,
+    username: "sebmendoza",
+    link: "https://github.com/sebmendoza",
+  },
+];
 
 function MoreAboutMe() {
   const [showBook, setShowBook] = useState(false);
@@ -10,19 +33,20 @@ function MoreAboutMe() {
   const isInView = useInView(ref);
 
   return (
-    <div className="relative h-screen pb-11">
+    <div className="relative flex flex-col items-center gap-6 lg:block lg:h-screen ">
       <Link
         href="/readingList"
-        className="absolute left-[10%] top-[30%] cursor-pointer p-4 pr-16 transition
-     duration-100 ease-out hover:scale-[101%] hover:border-opacity-100 lg:-rotate-2
+        className="relative max-w-[300px] cursor-pointer rounded-xl p-4 transition duration-100 ease-out hover:scale-[101%] hover:border-opacity-100 lg:absolute lg:left-[10%] lg:top-[30%]
+     lg:max-w-none lg:-rotate-2 lg:pr-16
       "
         onMouseEnter={() => setShowBook(true)}
         onMouseLeave={() => setShowBook(false)}
       >
-        <p className="text-3xl  lg:w-[400px]">
-          my reading list is a collection that has rekindled my love of books
+        <p className="text-xl lg:w-[400px]  lg:text-3xl">
+          my <span className="underline lg:no-underline">reading list</span> is
+          a collection that has rekindled my love of books
         </p>
-        <span className="absolute right-3 top-0">
+        <span className="absolute right-3 top-0 hidden lg:block">
           <motion.svg
             height="70"
             viewBox="0 0 93 148"
@@ -46,23 +70,29 @@ function MoreAboutMe() {
         </span>
       </Link>
 
-      <div className="absolute right-[10%] top-[59%] cursor-pointer transition duration-100 ease-out hover:scale-[101%]">
-        <p className="mid-sentence group pt-6 text-3xl transition-none duration-100 ease-out lg:w-[400px] lg:rotate-2">
-          here are some thought-out ideas
+      <div className="relative cursor-pointer transition duration-100 ease-out lg:absolute lg:right-[10%] lg:top-[59%] lg:hover:scale-[101%]">
+        <p className="mid-sentence group pt-6 text-xl transition-none duration-100 ease-out lg:w-[400px] lg:rotate-2 lg:text-3xl">
+          here are some thought-out
+          <span className="underline lg:no-underline"> ideas</span>
         </p>
       </div>
 
-      <div className="absolute bottom-0 flex w-full flex-col items-center">
-        <div>
-          <p>
-            shoot me an email or dm on linkedin :) always open to chat about new
-            ideas, answer questions some questions, or take reccommendations
-          </p>
-        </div>
-        <div className="my-14 flex justify-center lg:gap-48">
-          <span>@sebmen7</span>
+      <div className="relative mt-5 flex w-full flex-col items-center lg:absolute lg:bottom-0">
+        <p className="mx-4 text-center">
+          shoot me an email or dm on linkedin :) always open to chat about new
+          ideas, answer questions some questions, or take reccommendations
+        </p>
+
+        <div className="my-14 flex justify-center gap-8">
+          {contacts.map((item, i) => (
+            <Link href={item.link} key={i} className="flex items-center gap-1">
+              {item.icon}
+              <span className="hidden lg:inline">{item.username}</span>
+            </Link>
+          ))}
+          {/* <span>@sebmen7</span>
           <span>sebastian.mendoza@uwaterloo.com</span>
-          <span>sebmen</span>
+          <span>sebmen</span> */}
         </div>
       </div>
     </div>
