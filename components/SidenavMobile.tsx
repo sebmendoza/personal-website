@@ -26,7 +26,9 @@ function SidenavMobile() {
       </div>
 
       <motion.div
-        className="absolute bottom-0 left-0 right-0 h-4 origin-[0%] rounded-r-xl bg-green-900"
+        className={`absolute bottom-0 left-0 right-0 h-4 origin-[0%]  ${
+          scrollYProgress.get() > 0.98 ? "rounded-none" : "rounded-r-xl"
+        } bg-green-900`}
         style={{ scaleX: scrollYProgress }}
       />
     </div>

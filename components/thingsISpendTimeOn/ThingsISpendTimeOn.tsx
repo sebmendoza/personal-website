@@ -43,7 +43,7 @@ function ThingsISpendTimeOn() {
   // });
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen" id="spendTimeOn">
       <div>
         {/* <svg
           className="relative -top-12 w-full"

@@ -12,7 +12,7 @@ const ShelfItem = ({
 }) => {
   return (
     <div className="font-body">
-      <div key={key} className="flex items-center gap-4 ">
+      <div key={key} className="flex  gap-4 ">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg border-2 border-opacity-75">
           {isRead ? (
             <FaCheck className="text-green-800" />

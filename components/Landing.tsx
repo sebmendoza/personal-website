@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const landingPageAdjectives = [
   "amateur explorer",
@@ -15,7 +15,10 @@ const variants = {
 function Landing() {
   const [showAdj, setShowAdj] = useState(false);
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center">
+    <div
+      id="welcome"
+      className="relative flex h-screen w-full flex-col items-center justify-center"
+    >
       <h1
         className="relative mb-32 font-title text-4xl lg:text-[100px]"
         onMouseEnter={() => setShowAdj(true)}

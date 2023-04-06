@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Link from "next/link";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaSpotify } from "react-icons/fa";
 
 import { motion, useInView } from "framer-motion";
 
@@ -20,6 +20,11 @@ const contacts = [
     username: "sebmendoza",
     link: "https://github.com/sebmendoza",
   },
+  {
+    icon: <FaSpotify />,
+    username: "A Side of Chai",
+    link: "https://open.spotify.com/show/67O3AJhfXw7CPT4mO2aAG5?si=b15309242dcd4c76",
+  },
 ];
 
 function MoreAboutMe() {
@@ -27,9 +32,12 @@ function MoreAboutMe() {
   const ref = useRef(null);
 
   return (
-    <div className="relative flex flex-col items-center gap-6 lg:block lg:h-screen">
+    <div
+      className="relative flex flex-col items-center gap-6 lg:block lg:h-screen"
+      id="moreAboutMe"
+    >
       <h3 className="pt-16 text-center font-title text-3xl">
-        To get a better sense of how My brain works...
+        To get a better sense of how my brain works...
       </h3>
       <Link
         href="/library"
@@ -72,7 +80,8 @@ function MoreAboutMe() {
           <p className="mid-sentence max group max-w-[380px] pt-6 font-sidenav text-xl transition-none duration-100 ease-out lg:w-[400px] lg:rotate-2 lg:text-3xl">
             here are some
             <span className="lg:hidden"> (not so) </span> thought-out
-            <span className="underline lg:no-underline"> ideas</span>
+            <span className="underline lg:no-underline"> ideas</span> (coming
+            soon...)
           </p>
         </div>
       </div>

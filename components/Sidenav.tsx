@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { FaHandPeace, FaRegLaugh } from "react-icons/fa";
 import { TiStopwatch } from "react-icons/ti";
 import { useScroll, useMotionValueEvent } from "framer-motion";
@@ -6,7 +6,6 @@ import { useScroll, useMotionValueEvent } from "framer-motion";
 function Sidenav() {
   const { scrollYProgress } = useScroll();
   const [hookedYPostion, setHookedYPosition] = useState(0);
-  const ref = useRef(null);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     setHookedYPosition(latest);
@@ -25,7 +24,11 @@ function Sidenav() {
     }
   };
 
-  const sideNavItems = ["welcome", "things I spend time on", "more about me"];
+  const sideNavItems = [
+    { title: "welcome", scrollTo: "#welcome" },
+    { title: "things I spend time on", scrollTo: "#spendTimeOn" },
+    { title: "more about me", scrollTo: "#moreAboutMe" },
+  ];
 
   return (
     <div className="fixed z-50 hidden min-h-screen w-20 flex-col items-center justify-around font-sidenav lg:flex">
@@ -34,7 +37,9 @@ function Sidenav() {
           key={i}
           className="relative my-3 flex h-1/3 w-[40px] items-center justify-center whitespace-nowrap"
         >
-          <span className="-rotate-90 cursor-pointer text-2xl">{item}</span>
+          <span className="-rotate-90 cursor-pointer text-2xl">
+            <a href={item.scrollTo}>{item.title}</a>
+          </span>
         </div>
       ))}
 

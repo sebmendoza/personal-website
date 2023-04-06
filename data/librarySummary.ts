@@ -11,7 +11,8 @@ export const libraryData = [
       {
         title: "Klara and the Son",
         author: "David Suzuki",
-        review: "A pretty good book that did this and this",
+        review:
+          "A pretty good book that did this and this whats the last part of the part, the last 30 minutes",
       },
       {
         title: "Jesus Skeptic",
