@@ -64,8 +64,7 @@ function ThingsISpendTimeOn() {
           Within the last couple years, most of my time has gone towards
           exploring everything I find interesting in tech. In university,
           I&apos;ve spent time at internships and pushed my creativity with
-          coding and designcreative endeavour, and taken a few steps towards
-          learning good design.
+          coding and design.
         </p>
       </div>
       <div className="my-24 max-w-full lg:pl-10">
