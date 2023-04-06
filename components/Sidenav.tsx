@@ -34,11 +34,21 @@ function Sidenav() {
     }
   };
 
+  const sideNavItems = ["welcome", "things I spend time on", "more about me"];
+
   return (
-    <div className="fixed z-50 flex min-h-screen w-20 flex-col items-center justify-around font-Display">
+    <div className="fixed z-50 hidden min-h-screen w-20 flex-col items-center justify-around font-sidenav lg:flex">
       {/* <div className="absolute top-0 bottom-0  left-0 right-0 flex w-[100vh] -rotate-90 flex-row-reverse justify-around bg-white"> */}
 
-      <div className="relative my-3 flex h-1/3 w-[40px] items-center justify-center whitespace-nowrap">
+      {sideNavItems.map((item, i) => (
+        <div
+          key={i}
+          className="relative my-3 flex h-1/3 w-[40px] items-center justify-center whitespace-nowrap"
+        >
+          <span className="-rotate-90 cursor-pointer text-2xl">{item}</span>
+        </div>
+      ))}
+      {/* <div className="relative my-3 flex h-1/3 w-[40px] items-center justify-center whitespace-nowrap">
         <span className="-rotate-90 cursor-pointer text-3xl">welcome</span>
       </div>
 
@@ -52,7 +62,7 @@ function Sidenav() {
         <span className="-rotate-90 cursor-pointer text-3xl">
           more about me
         </span>
-      </div>
+      </div> */}
 
       <div
         id="myBar"

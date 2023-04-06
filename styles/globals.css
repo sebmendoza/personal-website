@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: Display, system-ui, sans-serif;
-  }
-}
-
 @font-face {
   font-family: "Gaya";
   src: url("../assets/fonts/Gaya-regular.otf");
@@ -16,6 +10,20 @@
 @font-face {
   font-family: "Display";
   src: url("../assets/fonts/Casanova\ Font.otf");
+}
+
+@font-face {
+  font-family: "P22Bold";
+  src: url("../assets/fonts/P22Mackinac-Bold_23.otf");
+}
+@font-face {
+  font-family: "P22";
+  src: url("../assets/fonts/P22MackinacPro-Book_25.otf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Regular.otf");
 }
 
 .dashed {

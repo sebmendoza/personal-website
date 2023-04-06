@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { timeDescriptions } from "../../data/timeDescriptions";
-import Cards from "./Cards";
+import Card from "./Card";
 import { motion, LayoutGroup } from "framer-motion";
 
 const MenuItem = ({
@@ -15,7 +15,7 @@ const MenuItem = ({
   <motion.div
     onClick={onClick}
     animate={{ opacity: selected ? 1 : 0.5 }}
-    className="relative mx-12 my-0 cursor-pointer text-2xl"
+    className="relative mx-3 my-0 cursor-pointer font-title text-3xl lg:mx-12"
   >
     {text}
     {selected && (
@@ -32,8 +32,8 @@ function ThingsISpendTimeOn() {
 
   return (
     <div className="relative h-screen">
-      <div className="absolute top-[40%] max-w-full  pl-10">
-        <div className="space-evenly flex">
+      <div className="absolute top-12 max-w-full lg:top-[40%] lg:pl-10">
+        <div className="flex justify-evenly lg:justify-start">
           <LayoutGroup>
             {timeDescriptions.map((item, index) => (
               <MenuItem
@@ -52,7 +52,7 @@ function ThingsISpendTimeOn() {
           {timeDescriptions[selectedMenuItem].experiences.map(
             (item: any, index: number) => {
               return (
-                <Cards
+                <Card
                   title={item.company}
                   key={item.key}
                   year={item.year}

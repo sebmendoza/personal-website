@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 // import Bookmark from "../assets/Bookmark.svg";
 
 function MoreAboutMe() {
   const [showBook, setShowBook] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   return (
     <div className="relative h-screen pb-11">
       <Link
         href="/readingList"
-        className="absolute left-[10%] top-[30%] -rotate-2 cursor-pointer rounded-2xl border-opacity-0 p-4 pr-16
-     transition duration-100 ease-out hover:scale-[101%] hover:border-opacity-100
+        className="absolute left-[10%] top-[30%] cursor-pointer p-4 pr-16 transition
+     duration-100 ease-out hover:scale-[101%] hover:border-opacity-100 lg:-rotate-2
       "
         onMouseEnter={() => setShowBook(true)}
         onMouseLeave={() => setShowBook(false)}
       >
-        <p className="w-[400px]  text-3xl">
+        <p className="text-3xl  lg:w-[400px]">
           my reading list is a collection that has rekindled my love of books
         </p>
         <span className="absolute right-3 top-0">
@@ -28,6 +30,8 @@ function MoreAboutMe() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <motion.path
+              ref={ref}
+              whileInView={{ pathLength: 1, pathOffset: 0 }}
               initial={{ pathLength: 1, pathOffset: 1 }}
               animate={showBook ? { pathLength: 1, pathOffset: 0 } : {}}
               transition={{
@@ -43,7 +47,7 @@ function MoreAboutMe() {
       </Link>
 
       <div className="absolute right-[10%] top-[59%] cursor-pointer transition duration-100 ease-out hover:scale-[101%]">
-        <p className="mid-sentence group w-[400px] rotate-2 pt-6 text-3xl transition-none duration-100 ease-out">
+        <p className="mid-sentence group pt-6 text-3xl transition-none duration-100 ease-out lg:w-[400px] lg:rotate-2">
           here are some thought-out ideas
         </p>
       </div>
@@ -55,7 +59,7 @@ function MoreAboutMe() {
             ideas, answer questions some questions, or take reccommendations
           </p>
         </div>
-        <div className="my-14 flex justify-center gap-48">
+        <div className="my-14 flex justify-center lg:gap-48">
           <span>@sebmen7</span>
           <span>sebastian.mendoza@uwaterloo.com</span>
           <span>sebmen</span>

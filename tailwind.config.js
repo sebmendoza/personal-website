@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         Gaya: ["Gaya"],
         Display: ["Casanova", "Oswald", "Open Sans"],
+        sidenav: ["P22", "Oswald", "Open Sans"],
+        title: ["P22Bold", "Oswald", "Open Sans"],
+        body: ["Satoshi", "Oswald", "Open Sans"],
       },
       backgroundImage: {
         parchment: "url('./assets/parchment.avif')",
