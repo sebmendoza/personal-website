@@ -44,7 +44,7 @@
 }
 
 .mid-sentence {
-  @apply before:mr-1 before:flex before:h-4 before:justify-center before:stroke-red-500 before:text-green-100 before:transition-opacity before:duration-700 before:ease-in-out before:content-vercel 
-  after:absolute after:right-[41%] after:top-0 after:mb-4 after:text-lg after:text-red-500 after:transition-opacity
-  after:duration-700 after:ease-in-out after:content-['\(not_so\)'] hover:before:opacity-100 hover:after:opacity-100 before:lg:opacity-0 after:lg:opacity-0;
+  @apply before:mr-1 before:hidden before:h-4 before:justify-center before:stroke-red-500 before:text-green-100 before:transition-opacity before:duration-700 before:ease-in-out before:content-vercel after:absolute 
+  after:right-[41%] after:top-0 after:mb-4 after:hidden after:text-lg after:text-red-500 after:transition-opacity after:duration-700 after:ease-in-out
+  after:content-['\(not_so\)'] hover:before:opacity-100 hover:after:opacity-100 before:lg:flex before:lg:opacity-0 after:lg:inline after:lg:opacity-0;
 }

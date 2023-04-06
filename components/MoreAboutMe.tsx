@@ -29,18 +29,22 @@ function MoreAboutMe() {
 
   return (
     <div className="relative flex flex-col items-center gap-6 lg:block lg:h-screen">
+      <h3 className="pt-16 text-center font-title text-3xl">
+        To Get a Better Sense of how my brain works...
+      </h3>
       <Link
         href="/readingList"
-        className="relative max-w-[300px] cursor-pointer rounded-xl p-4 transition duration-100 ease-out hover:scale-[101%]  lg:absolute lg:left-[10%] lg:top-[30%]
-     lg:max-w-none lg:-rotate-2 lg:pr-16"
+        className="relative flex max-w-[300px] cursor-pointer gap-2 rounded-xl p-4 transition duration-100 ease-out hover:scale-[101%] lg:relative lg:mb-24 lg:ml-12 lg:mt-32
+     lg:w-fit lg:max-w-none lg:-rotate-2"
         onMouseEnter={() => setShowBook(true)}
         onMouseLeave={() => setShowBook(false)}
       >
-        <p className="font-sidenav text-xl lg:w-[400px] lg:text-3xl">
-          my <span className="underline lg:no-underline">reading list</span> is
-          a collection that has rekindled my love of books
+        <p className="max-w-[380px] font-sidenav text-xl lg:text-3xl">
+          check out my
+          <span className="underline lg:no-underline"> reading list</span>; a
+          rekindled love of books
         </p>
-        <span className="absolute right-3 top-0 hidden lg:block">
+        <span className="hidden lg:block">
           <motion.svg
             height="70"
             viewBox="0 0 93 148"
@@ -64,11 +68,14 @@ function MoreAboutMe() {
         </span>
       </Link>
 
-      <div className="relative cursor-pointer transition duration-100 ease-out lg:absolute lg:right-[10%] lg:top-[50%] lg:hover:scale-[101%]">
-        <p className="mid-sentence group pt-6 font-sidenav text-xl transition-none duration-100 ease-out lg:w-[400px] lg:rotate-2 lg:text-3xl">
-          here are some thought-out
-          <span className="underline lg:no-underline"> ideas</span>
-        </p>
+      <div className="flex text-center lg:justify-end">
+        <div className="relative w-full cursor-pointer transition duration-100 ease-out lg:w-fit lg:hover:scale-[101%]">
+          <p className="mid-sentence max group max-w-[380px] pt-6 font-sidenav text-xl transition-none duration-100 ease-out lg:w-[400px] lg:rotate-2 lg:text-3xl">
+            here are some
+            <span className="lg:hidden"> (not so) </span> thought-out
+            <span className="underline lg:no-underline"> ideas</span>
+          </p>
+        </div>
       </div>
 
       <div className="relative mt-5 flex w-full flex-col items-center font-body lg:absolute lg:bottom-0">
