@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scrollbar-hide;
+  }
+}
+
 @font-face {
   font-family: "Gaya";
   src: url("../assets/fonts/Gaya-regular.otf");

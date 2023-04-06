@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Link from "next/link";
-import { FaTwitter, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { motion, useInView } from "framer-motion";
 
@@ -25,15 +25,14 @@ const contacts = [
 function MoreAboutMe() {
   const [showBook, setShowBook] = useState(false);
   const ref = useRef(null);
-  const isInView = useInView(ref);
 
   return (
     <div className="relative flex flex-col items-center gap-6 lg:block lg:h-screen">
       <h3 className="pt-16 text-center font-title text-3xl">
-        To Get a Better Sense of how my brain works...
+        To get a better sense of how My brain works...
       </h3>
       <Link
-        href="/readingList"
+        href="/library"
         className="relative flex max-w-[300px] cursor-pointer gap-2 rounded-xl p-4 transition duration-100 ease-out hover:scale-[101%] lg:relative lg:mb-24 lg:ml-12 lg:mt-32
      lg:w-fit lg:max-w-none lg:-rotate-2"
         onMouseEnter={() => setShowBook(true)}
