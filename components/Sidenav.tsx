@@ -40,9 +40,9 @@ function Sidenav() {
 
       <div
         id="myBar"
-        className={`absolute -right-1 top-0 flex h-screen w-2 -translate-y-[100%] transform justify-center rounded-xl bg-stone-700 transition-[height] ease-in-out`}
+        className={`absolute -right-1 top-0 flex h-screen w-2 -translate-y-[100%] transform justify-center bg-green-900 transition-[height] ease-in-out`}
       >
-        <div className="shadow-5xl absolute bottom-0 flex h-8 w-8 items-center justify-center rounded-full border-[1px] border-stone-700/75 bg-white text-stone-700">
+        <div className="shadow-5xl absolute bottom-0 flex h-8 w-8 items-center justify-center rounded-full border-[1px] border-green-900 bg-white text-stone-700">
           {checkIconToShow(scrollYProgress.get())}
         </div>
       </div>

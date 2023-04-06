@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useRef } from "react";
 import { timeDescriptions } from "../../data/timeDescriptions";
 import Card from "./Card";
-import { motion, LayoutGroup } from "framer-motion";
+import {
+  motion,
+  LayoutGroup,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 
 const MenuItem = ({
   text,
@@ -30,10 +35,41 @@ const MenuItem = ({
 function ThingsISpendTimeOn() {
   const [selectedMenuItem, setSelectedMenuItem] = useState(0);
 
+  // this was making my website bug out hard - will come back to this
+  // const drawRef = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: drawRef,
+  //   offset: ["start start", "end end"],
+  // });
+
   return (
     <div className="relative h-screen">
-      <div className="absolute top-12 max-w-full lg:top-[40%] lg:pl-10">
-        <div className="flex justify-evenly lg:justify-start">
+      <div>
+        {/* <svg
+          className="relative -top-12 w-full"
+          viewBox="0 0 694 188"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.path
+            // ref={drawRef}
+            // initial={{ pathLength: 0 }}
+            // // style={{ pathLength: scrollYProgress }}
+            d="M1 184C1 184 86.5 89.5 107 97C127.5 104.5 116.5 158 148 184C179.5 210 276 39.5 302 61.5C328 83.5 328.5 145.5 363.5 169.5C398.5 193.5 521 24.5 545.5 39.5C570 54.5 581 135.5 605 152.5C629 169.5 753.5 0.5 753.5 0.5"
+            stroke="black"
+          />
+        </svg> */}
+        <p className="text mt-6 px-4 text-center font-body lg:max-w-none lg:px-0 lg:pl-10 lg:text-left lg:text-xl">
+          As an explorer, I find myself doing something different each day.
+          Within the last couple years, most of my time has gone towards
+          exploring everything I find interesting in tech. In university,
+          I&apos;ve spent time at internships and pushed my creativity with
+          coding and designcreative endeavour, and taken a few steps towards
+          learning good design.
+        </p>
+      </div>
+      <div className="my-24 max-w-full lg:pl-10">
+        <div className="mb-4 flex justify-evenly lg:justify-start">
           <LayoutGroup>
             {timeDescriptions.map((item, index) => (
               <MenuItem
@@ -48,7 +84,7 @@ function ThingsISpendTimeOn() {
           </LayoutGroup>
         </div>
 
-        <div className="mt-10 flex space-x-7 overflow-x-scroll p-4 scrollbar-hide">
+        <div className="flex space-x-7 overflow-x-scroll p-4 scrollbar-hide">
           {timeDescriptions[selectedMenuItem].experiences.map(
             (item: any, index: number) => {
               return (
