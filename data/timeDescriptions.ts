@@ -22,7 +22,7 @@ export const timeDescriptions = [
         company: "Simcoe Green Gardens",
         year: "High School",
         description:
-          "Founded a gardening business with a friend in highschool. We grew each summer and we eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
+          "As a student athlete, I needed a way to make money with a flexible schedule. This led me to founding a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
       },
     ],
   },
@@ -30,18 +30,34 @@ export const timeDescriptions = [
     title: "code",
     experiences: [
       {
-        company: "harvard hacks",
-        year: "2020",
+        company: "UW Blueprint",
+        year: "Present",
         description:
-          "Built an awesome toy and a website to go along with it. First Place!!!",
-        key: "0",
+          "I truly believe the best use of my skills is in the service others. Taking action on this, I joined a design team at UWaterloo that makes software for NPOS. Currently, I'm working on finishing up the CCBC project which will ship May 2022!",
       },
       {
-        company: "time to breathe",
-        year: "2020",
+        company: "Electrium Mobility",
+        year: "Present",
         description:
-          "Built an awesome toy and a website to go along with it. First Place!!!",
-        key: "1",
+          "I consume a lot of content on urban transportation and I'm a advocator for walk-able city design. To intersect this interest with tech, I joined EM's firmware team to work on an electric Onewheel that we'll be building this summer!",
+      },
+      {
+        company: "Harvard Hacks",
+        year: "Fall 2022",
+        description:
+          "Built an SLS 3D printed toy (packed with sensors and an arduino) and a website as a form of expression for children with communication disabilities. Initially, Arduino and the Firebase Realtime Database were challenging to use but were able to create a working prototype!",
+      },
+      {
+        company: "Finger Tracker",
+        year: " Fall 2021",
+        description:
+          "Computer vision is super interesting, especially when talking about autonomous vehivles. To learn some basics, I created a small finger tracking application that counts the number of finger you hold up. More complex projects will be in my future!",
+      },
+      {
+        company: "Time to Breathe",
+        year: "Summer 2021",
+        description:
+          "One year during midterms, stress was spreading like a plague. With my knowledge of breathing techniques from Andrew Huberman, I made a small website with HTML, CSS, and vanilla JS to guide you through a small breathing exercise during study breaks.",
       },
     ],
   },
@@ -53,14 +69,12 @@ export const timeDescriptions = [
         year: "2018",
         description:
           "Designed some awesome dueolingo widgets. Scotia helped me with the Figma but I did all the case study.",
-        key: "0",
       },
       {
         company: "duolingo widgets",
         year: "2018",
         description:
           "Designed some awesome dueolingo widgets. Scotia helped me with the Figma but I did all the case study.",
-        key: "1",
       },
     ],
   },
