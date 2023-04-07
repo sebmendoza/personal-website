@@ -5,22 +5,24 @@ export const timeDescriptions = [
     title: "work",
     experiences: [
       {
-        company: "stratosphere.io",
-        year: "2022",
+        company: "Stratosphere.io",
+        year: "Fall 2022",
         description:
-          "Created beautiful frontend componenets for this financial data platform startup",
+          "Stratophere is a small but mighty team, making a financial terminal for the browser. This was my first taste of the startup culture and I loved it. I worked alongside 2 other developers making sweet animations and creating a beautiful UI.",
       },
       {
-        company: "teranet",
-        year: "2022",
+        company: "Teranet",
+        year: "Winter 2022",
         description:
-          "Created beautiful frontend componenets for this financial data platform startup",
+          "Teranet manages land registries for the Ontario government. On their data analytics team, I made internal dashboards with SQL and Tableau and did research. A research project I led looked into trends of the HOT 2022 housing market. Check it out ",
+        link: "https://www.teranet.ca/wp-content/uploads/2023/02/Q4-2022-Teranet-Market-Insight-Report.pdf",
       },
+
       {
-        company: "simcoe green gardens",
-        year: "2022",
+        company: "Simcoe Green Gardens",
+        year: "High School",
         description:
-          "Created beautiful frontend componenets for this financial data platform startup",
+          "Founded a gardening business with a friend in highschool. We grew each summer and we eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
       },
     ],
   },

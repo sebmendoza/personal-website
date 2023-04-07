@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const landingPageAdjectives = [
@@ -14,6 +14,12 @@ const variants = {
 
 function Landing() {
   const [showAdj, setShowAdj] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 1024);
+  }, []);
+
   return (
     <div
       id="welcome"
@@ -29,11 +35,10 @@ function Landing() {
         {landingPageAdjectives.map((item, i) => (
           <motion.span
             initial={"hide"}
-            whileInView={"show"}
-            animate={showAdj ? "show" : "hide"}
+            animate={showAdj || isMobile ? "show" : "hide"}
             key={i}
             variants={variants}
-            className="font-sidenav text-[25px]"
+            className="text-center font-sidenav text-[25px]"
           >
             {item}
           </motion.span>
