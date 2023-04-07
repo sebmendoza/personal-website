@@ -9,7 +9,7 @@ export const libraryData = [
     year: "2022/2023",
     booksRead: [
       {
-        title: "Klara and the Son",
+        title: "Klara and the Sun",
         author: "Kazuo Ishiguro",
         review:
           "An awesome book that explores the perspective of an AI robot and her relationsip with a young child. This books prompted me to ask questions about consiousness, love, and how realistic this type of interaction is for our future.",

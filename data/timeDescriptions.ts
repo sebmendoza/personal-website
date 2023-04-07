@@ -22,7 +22,7 @@ export const timeDescriptions = [
         company: "Simcoe Green Gardens",
         year: "High School",
         description:
-          "As a student athlete, I needed a way to make money with a flexible schedule. This led me to founding a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
+          "As a student athlete, my schedule was imcompatible with regular jobs so I created a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
       },
     ],
   },
