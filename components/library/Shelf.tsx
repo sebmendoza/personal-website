@@ -13,7 +13,7 @@ const ShelfItem = ({
   return (
     <div className="font-body">
       <div key={key} className="flex  gap-4 ">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg border-2 border-opacity-75">
+        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border-2 border-opacity-75">
           {isRead ? (
             <FaCheck className="text-green-800" />
           ) : (
@@ -47,11 +47,11 @@ export const Shelf = ({
       </h3>
       <hr />
       <div className="mt-5 flex flex-col gap-5">
-        {booksRead.map((book, i) => (
-          <ShelfItem book={book} isRead={true} key={i} />
-        ))}
         {booksInProgress.map((book, i) => (
           <ShelfItem book={book} isRead={false} key={i} />
+        ))}
+        {booksRead.map((book, i) => (
+          <ShelfItem book={book} isRead={true} key={i} />
         ))}
       </div>
     </div>

@@ -6,7 +6,7 @@ function BackButton() {
   return (
     <Link href="/" className="flex w-fit items-center gap-4">
       <FaLongArrowAltLeft className="h-10" />
-      <span className="hover:underline ">leave library</span>
+      <span className="font-body hover:underline">leave library</span>
     </Link>
   );
 }
