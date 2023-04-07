@@ -65,16 +65,16 @@ export const timeDescriptions = [
     title: "design",
     experiences: [
       {
-        company: "TILE designathon",
-        year: "2018",
+        company: "TILE Designathon",
+        year: "Winter 2023",
         description:
-          "Designed some awesome dueolingo widgets. Scotia helped me with the Figma but I did all the case study.",
+          "I enjoy design because it allows me empathize with stakeholders and use creativity to solve their problems. At this compeition, my team created Votepedia, a gamified learning experience (inspired by Hinge lol) about Canadian politicians that encourages people to vote!",
       },
       {
-        company: "duolingo widgets",
-        year: "2018",
+        company: "Duolingo Widgets",
+        year: "Fall 2022",
         description:
-          "Designed some awesome dueolingo widgets. Scotia helped me with the Figma but I did all the case study.",
+          "I use Duolingo almost everyday to learn Spanish. Unfortunately, Duolingo only has 1-2 versions of their IOS widget and they weren't extremely engaging. This inspired me to create a few of my own. Case study coming soon!",
       },
     ],
   },
