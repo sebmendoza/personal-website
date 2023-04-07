@@ -30,7 +30,7 @@ export const libraryData = [
         title: "The Sacred Balance",
         author: "David Suzuki",
         review:
-          "There is a sense, whether it be unconcious or not, that humans are completely seperate from nature. This books explains how connected everything actually is and how dependent we are on nature. Although dry in some parts, this book is interesting as an ethic to an ecologically sustainable way of life.",
+          "There is a sense, whether it be unconscious or not, that humans are completely seperate from nature. This books explains how connected everything actually is and how dependent we are on nature. Although dry in some parts, this book is interesting as an ethic to an ecologically sustainable way of life.",
       },
       {
         title: "A Short History of the World",
@@ -44,7 +44,7 @@ export const libraryData = [
         title: "Exodus",
         author: "Unknown?",
         review:
-          "I just began the story of the Exodus. I'm excited to see how Biblical narrative themes are continued or changed while Moses brings the Jews out of Egypt.",
+          "I just began the story of the Exodus. I'm excited to see how Biblical narrative themes are continued or changed while Moses brings the Israelites out of Egypt.",
       },
       {
         title: "Gentle and Lowly",
