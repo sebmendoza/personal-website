@@ -8,7 +8,7 @@ export const timeDescriptions = [
         company: "Stratosphere.io",
         year: "Fall 2022",
         description:
-          "Stratophere is a small but mighty team, making a financial terminal for the browser. This was my first taste of the startup culture and I loved it. I worked alongside 2 other developers making sweet animations and creating a beautiful UI.",
+          "Stratosphere is a small but mighty team, making a financial terminal for the browser. This was my first taste of the startup culture and I loved it. I worked alongside 2 other developers making sweet animations and creating a beautiful UI.",
       },
       {
         company: "Teranet",
@@ -22,7 +22,7 @@ export const timeDescriptions = [
         company: "Simcoe Green Gardens",
         year: "High School",
         description:
-          "As a student athlete, my schedule was imcompatible with regular jobs so I created a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
+          "As a student athlete, my schedule was imnompatible with regular jobs so I created a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
       },
     ],
   },
@@ -45,13 +45,13 @@ export const timeDescriptions = [
         company: "Harvard Hacks",
         year: "Fall 2022",
         description:
-          "Built an SLS 3D printed toy (packed with sensors and an arduino) and a website as a form of expression for children with communication disabilities. Initially, Arduino and the Firebase Realtime Database were challenging to use but were able to create a working prototype!",
+          "Built an SLS 3D printed toy (packed with sensors and an Arduino) and a website as a form of expression for children with communication disabilities. Initially, Arduino and the Firebase Realtime Database were challenging to use but were able to create a working prototype!",
       },
       {
         company: "Finger Tracker",
         year: " Fall 2021",
         description:
-          "Computer vision is super interesting, especially when talking about autonomous vehivles. To learn some basics, I created a small finger tracking application that counts the number of finger you hold up. More complex projects will be in my future!",
+          "Computer vision is super interesting, especially when talking about autonomous vehicles. To learn some basics, I created a small finger tracking application that counts the number of finger you hold up. More complex projects will be in my future!",
       },
       {
         company: "Time to Breathe",
@@ -68,7 +68,7 @@ export const timeDescriptions = [
         company: "TILE Designathon",
         year: "Winter 2023",
         description:
-          "I enjoy design because it allows me empathize with stakeholders and use creativity to solve their problems. At this compeition, my team created Votepedia, a gamified learning experience (inspired by Hinge lol) about Canadian politicians that encourages people to vote!",
+          "I enjoy design because it allows me empathize with stakeholders and use creativity to solve their problems. At this competition, my team created Votepedia, a gamified learning experience (inspired by Hinge lol) about Canadian politicians that encourages people to vote!",
       },
       {
         company: "Duolingo Widgets",

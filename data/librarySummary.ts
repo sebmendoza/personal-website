@@ -12,7 +12,7 @@ export const libraryData = [
         title: "Klara and the Sun",
         author: "Kazuo Ishiguro",
         review:
-          "An awesome book that explores the perspective of an AI robot and her relationsip with a young child. This books prompted me to ask questions about consiousness, love, and how realistic this type of interaction is for our future.",
+          "An awesome book that explores the perspective of an AI robot and her relationship with a young child. This books prompted me to ask questions about consciousness, love, and how realistic this type of interaction is for our future.",
       },
       {
         title: "Jesus Skeptic",
@@ -44,7 +44,7 @@ export const libraryData = [
         title: "Exodus",
         author: "Unknown?",
         review:
-          "I just began the story of the Exodus. I'm excited to see how Bibilical narritive themes are continued or changed while Moses brings the Jews out of Egypt.",
+          "I just began the story of the Exodus. I'm excited to see how Biblical narrative themes are continued or changed while Moses brings the Jews out of Egypt.",
       },
       {
         title: "Gentle and Lowly",
