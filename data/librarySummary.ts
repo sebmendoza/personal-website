@@ -6,7 +6,7 @@ export type Book = {
 
 export const libraryData = [
   {
-    year: 2023,
+    year: "2023",
     booksRead: [
       {
         title: "When Breathe Becomes Air",

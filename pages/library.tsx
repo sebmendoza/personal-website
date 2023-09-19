@@ -22,7 +22,6 @@ function Library() {
             key={i}
             year={row.year}
             booksRead={row.booksRead}
-            booksInProgress={row.booksInProgress}
           />
         ))}
       </div>
