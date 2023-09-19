@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState, useRef } from "react";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 const landingPageAdjectives = [
   "amateur explorer",
@@ -13,21 +13,35 @@ const variants = {
 };
 
 function Landing() {
-  const [showAdj, setShowAdj] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const scrollRef = useRef(null);
+  
+  let tailwindStyle = "relative flex h-screen w-full flex-col items-center justify-center"
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    if (latest < 0.3) {
+      tailwindStyle = "relative flex h-screen w-full flex-col items-center justify-center bg-red-500"
+    }
+    else {
+      tailwindStyle = "relative flex h-screen w-full flex-col items-center justify-center bg-green-400"
+
+    }
+
+    console.log("x changed to", latest)
+  })
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 1024);
-  }, []);
+    console.log(tailwindStyle)
+  }, [tailwindStyle]);
 
+  console.log(scrollYProgress);
   return (
     <div
       id="welcome"
-      className="relative flex h-screen w-full flex-col items-center justify-center"
+      className={tailwindStyle}
+      ref={scrollRef}
     >
       <h1
         className="relative mb-32 font-title text-4xl lg:text-[100px]"
-        onMouseEnter={() => setShowAdj(true)}
       >
         Hi! I&apos;m Sebastian
       </h1>
@@ -35,7 +49,7 @@ function Landing() {
         {landingPageAdjectives.map((item, i) => (
           <motion.span
             initial={"hide"}
-            animate={showAdj || isMobile ? "show" : "hide"}
+            animate={"show"}
             key={i}
             variants={variants}
             className="text-center font-sidenav text-[25px]"

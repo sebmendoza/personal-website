@@ -34,11 +34,9 @@ const ShelfItem = ({
 export const Shelf = ({
   year,
   booksRead,
-  booksInProgress,
 }: {
   year: string;
   booksRead: Book[];
-  booksInProgress: Book[];
 }) => {
   return (
     <div>
@@ -47,9 +45,7 @@ export const Shelf = ({
       </h3>
       <hr />
       <div className="mt-5 flex flex-col gap-5">
-        {booksInProgress.map((book, i) => (
-          <ShelfItem book={book} isRead={false} key={i} />
-        ))}
+
         {booksRead.map((book, i) => (
           <ShelfItem book={book} isRead={true} key={i} />
         ))}

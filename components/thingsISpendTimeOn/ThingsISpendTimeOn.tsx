@@ -60,11 +60,9 @@ function ThingsISpendTimeOn() {
           />
         </svg> */}
         <p className="text mt-6 px-4 text-center font-body lg:max-w-none lg:px-0 lg:pl-10 lg:text-left lg:text-xl">
-          As an explorer, I try doing something different each day. Over the
-          last couple years, most of my time has gone towards exploring
-          everything I find interesting in tech. In university, I&apos;ve
-          completed a couple internships and pushed my creativity with coding
-          and design. Check out this brief summary of how I spend my time:
+          As an explorer, I try to do something new each day. Most of my time over the last couple of years 
+          has been spent on the trail towards tech. This landed me at UWaterloo where I am working on pushing
+          my creativity with programming and design. Check out this brief summary of how I spend my time:
         </p>
       </div>
       <div className="my-24 max-w-full lg:pl-10">

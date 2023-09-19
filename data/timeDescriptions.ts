@@ -4,6 +4,12 @@ export const timeDescriptions = [
   {
     title: "work",
     experiences: [
+
+      {
+        company: "GenText AI",
+        year: "Summer 2023",
+        description: "GenText makes products with generative AI tools. Here, I had sole responsibility for delivering an AI-tutoring app, built with React Native, to the App Store. I love working in EdTech and I tailored the product to bring a valuable study tool to students."
+      },
       {
         company: "Stratosphere.io",
         year: "Fall 2022",
@@ -22,7 +28,7 @@ export const timeDescriptions = [
         company: "Simcoe Green Gardens",
         year: "High School",
         description:
-          "As a student athlete, my schedule was imnompatible with regular jobs so I created a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
+          "As a student athlete, my schedule was imcompatible with regular jobs so I created a gardening business with my friend (also a student-athlete). We grew each summer and eventually served 70 clients across Simcoe County and had 12+ part-time members of our team",
       },
     ],
   },

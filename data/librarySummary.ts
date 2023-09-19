@@ -6,7 +6,19 @@ export type Book = {
 
 export const libraryData = [
   {
-    year: "2022/2023",
+    year: 2023,
+    booksRead: [
+      {
+        title: "When Breathe Becomes Air",
+        author: "Paul Kalanithi",
+        review:
+          "Paul faced death with integrity. From his words, and his wife’s account, there were tears and anguish but he did not choose to avoid his difficult circumstance. He spent this time as a doctor merely aiming at slowing the pace of his patients’ journeys into death’s arms.  To slow his own pace, he chose to live in the moment with his newborn daughter and family. 10/10 would recommend.",
+      },
+
+    ]
+  },
+  {
+    year: "2022",
     booksRead: [
       {
         title: "Klara and the Sun",
@@ -39,19 +51,6 @@ export const libraryData = [
           "This books gives a brief summary of each of the 50 most influential books in history. It paints a picture of each time period which I loved as a history nerd. I've added many of these books to my reading list, including The Murders in the Rue Morgue, Incidents in the Life of a Slave Girl, and Catch-22.",
       },
     ],
-    booksInProgress: [
-      {
-        title: "Exodus",
-        author: "Unknown?",
-        review:
-          "I just began the story of the Exodus. I'm excited to see how Biblical narrative themes are continued or changed while Moses brings the Israelites out of Egypt.",
-      },
-      {
-        title: "Gentle and Lowly",
-        author: "Dane C. Ortlund",
-        review:
-          "In this book, Ortlund goes through an analysis of the Bible to uncover the depth of sympathy, mercy and grace in the character of Jesus. This study is definitely influenced by Puritan writings, which I've never been exposed to before.",
-      },
-    ],
+  
   },
 ];
