@@ -40,12 +40,11 @@ export const Shelf = ({
 }) => {
   return (
     <div>
-      <h3 className="my-3 font-title text-2xl font-semibold text-gray-600">
+      <h3 className="my-4 font-title text-2xl font-semibold text-gray-600">
         {year}
       </h3>
       <hr />
       <div className="mt-5 flex flex-col gap-5">
-
         {booksRead.map((book, i) => (
           <ShelfItem book={book} isRead={true} key={i} />
         ))}

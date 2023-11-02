@@ -7,15 +7,65 @@ export type Book = {
 export const libraryData = [
   {
     year: "2023",
+
     booksRead: [
+      {
+        title: "Walking Home: Life and Lessons from a City Builder",
+        author: "Ken Greenburg",
+        review: "",
+      },
+      {
+        title: "Catch-22",
+        author: "Joseph Heller",
+        review: "",
+      },
+      {
+        title: "Poetry of the Universe",
+        author: "Robert Osserman",
+        review: "",
+      },
+      {
+        title: "Can't Hurt Me",
+        author: "David Goggins",
+        review: "",
+      },
+      {
+        title: "The Social Contract",
+        author: "Jean-Jacques Rousseau",
+        review: "",
+      },
+      {
+        title: "The Rise: Kobe Bryant and the Pursuit of Immortality",
+        author: "Mike Sielski",
+        review: "",
+      },
+      {
+        title: "Day",
+        author: "Elie Wiesel",
+        review: "",
+      },
+      {
+        title: "Dawn",
+        author: "Elie Wiesel",
+        review: "",
+      },
+      {
+        title: "Beyond the Trees",
+        author: "Adam Shoalts",
+        review: "",
+      },
+      {
+        title: "The Wealthy Barber",
+        author: "David Chilton",
+        review: "",
+      },
       {
         title: "When Breathe Becomes Air",
         author: "Paul Kalanithi",
         review:
-          "Paul faced death with integrity. From his words, and his wife’s account, there were tears and anguish but he did not choose to avoid his difficult circumstance. He spent this time as a doctor merely aiming at slowing the pace of his patients’ journeys into death’s arms.  To slow his own pace, he chose to live in the moment with his newborn daughter and family. 10/10 would recommend.",
+          "Paul faced death with integrity. From his words, and his wife’s account, there were tears and anguish but he did not choose to avoid his difficult circumstance. He spent this time as a doctor merely aiming at slowing the pace of his patients’ journeys into death’s arms. To slow his own pace, he chose to live in the moment with his newborn daughter and family. 10/10 would recommend.",
       },
-
-    ]
+    ],
   },
   {
     year: "2022",
@@ -51,6 +101,5 @@ export const libraryData = [
           "This books gives a brief summary of each of the 50 most influential books in history. It paints a picture of each time period which I loved as a history nerd. I've added many of these books to my reading list, including The Murders in the Rue Morgue, Incidents in the Life of a Slave Girl, and Catch-22.",
       },
     ],
-  
   },
 ];
